@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView
+    tools:context="com.example.android.quizzy"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TODO: - Add more questions (I think you'll need at least 4
+    - Add better IDs to the EditTexts, CheckBoxes and the correct answer RadioButtons.
+    - Add every strings to the strings.xml
+     - Add stryles to the styles.xml (like Question style, etc) -->
+
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_quiz_information"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Quiz information: This quiz contains 10 questions and answers and the number of points can give you a feedback about how far you are from your desired lifestyle. PCOS is not an enemy, it just teaches you to return back to our healthy life in this running world. Chin up!"/>
+
+    <!-- Quesion 1 -->
+
+    <TextView
+        android:id="@+id/tv_question1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Question 1: How many times is it recommended to eat if you have PCOS?"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_question1_answer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Write your answer here"
+        android:inputType="number"/>
+
+    <!-- Quesion 2 -->
+
+    <TextView
+        android:id="@+id/tv_question2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Question 2: What kind of breakfast is good to prevent high glucose level in your blood?"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/cb_question2_incorrect_answer_1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Milk with Cornflakes"/>
+
+    <CheckBox
+        android:id="@+id/cb_question2_correct_answer_1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Eggs, ham, traditional bread"/>
+
+    <CheckBox
+        android:id="@+id/cb_question2_correct_answer_2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Whole grain bread, cheese, vegetables"/>
+
+    <!-- Quesion 3 -->
+
+    <TextView
+        android:id="@+id/tv_question3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Question 3: What are the three core elements that you need to implement in your life in order to stay healthy?"
+        android:textStyle="bold"/>
+
+
+    <RadioGroup
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rb_question3_correct_answer1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Working hard, no relaxing, lots of coffee"/>
+
+    <RadioButton
+        android:id="@+id/rb_question3_correct_answer2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Fun, Lots of movies, Cornflakes"/>
+
+    <RadioButton
+        android:id="@+id/rb_question3_correct_answer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Sport, Healthy Diet, Medication"/>
+
+</RadioGroup>
+
+        <!-- Quesion 4 -->
+
+        <TextView
+            android:id="@+id/tv_question4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Question 4: How many gram of carbohydrate do you need to consume a day?"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_question4_answer"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Write your answer here"
+            android:inputType="number"/>
+
+    <!-- Submit the answers above. -->
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Submit"
+        android:onClick="onClickSubmit"/>
+
+</LinearLayout>
+
+</ScrollView>
