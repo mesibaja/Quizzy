@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Quizzy</string>
-    <string name="quiz_info">Quiz information: This quiz contains 10 questions and answers and the number of points can give you a feedback about how far you are from your desired lifestyle. PCOS is not an enemy, it just teaches you to return back to our healthy life in this running world. Chin up!</string>
+    <string name="app_name">PCOS Quizzy</string>
+    <string name="pcos">PCOS</string>
+    <string name="quiz_info">This quiz consists of 4 questions and answers and the number of points achieved can give you a feedback about how far you are from your desired lifestyle. PCOS is not an enemy, it just teaches you to return back to our healthy life in this running world. Chin up!</string>
     <string name="question_1">Question 1: How many times is it recommended to eat if you have PCOS?</string>
     <string name="question_2">Question 2: What kind of breakfast is good to prevent high glucose level in your blood?</string>
     <string name="cb_answer_1">Milk with Cornflakes</string>
