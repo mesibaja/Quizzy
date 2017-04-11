@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     // Correct RadioButton option for Question 3
     private RadioButton mQuestion3CorrectAnswerRadioButton;
 
+    private EditText mQuestion4AnswerEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Bind Question 3 correct answer
         mQuestion3CorrectAnswerRadioButton = (RadioButton) findViewById(R.id.rb_question3_correct_answer);
+
+        // Bind Question 4 answer
+        mQuestion1AnswerEditText = (EditText) findViewById(R.id.et_question4_answer);
+
     }
 
     public void onClickSubmit(View view) {
