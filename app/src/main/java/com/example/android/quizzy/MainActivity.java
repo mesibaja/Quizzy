@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.example.android.quizzy.R;
-
 public class MainActivity extends AppCompatActivity {
 
     // You need to put here all the EditTexts, all the CheckBoxes, and all the
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the answer for question 1
         String question1Answer = mQuestion1AnswerEditText.getText().toString();
         // Check if it is equals to the correct answer that you store in the strings.xml
-        if (question1Answer.equals(getString(R.string.question1Answer))) {
+        if (question1Answer.equals(getString(R.string.question_1_correct_answer))) {
             numberOfCorrectAnswers++;
         }
 
