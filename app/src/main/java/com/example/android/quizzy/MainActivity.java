@@ -10,9 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // You need to put here all the EditTexts, all the CheckBoxes, and all the
-    // RadioButtons which belongs to the correct answers.
-
     // Free text answer for Question 1
     private EditText mQuestion1AnswerEditText;
 
@@ -43,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mQuestion3CorrectAnswerRadioButton = (RadioButton) findViewById(R.id.rb_question3_correct_answer);
 
         // Bind Question 4 answer
-        mQuestion1AnswerEditText = (EditText) findViewById(R.id.et_question4_answer);
+        mQuestion4AnswerEditText = (EditText) findViewById(R.id.et_question4_answer);
 
     }
 
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         // Evaluate Question 1
         // Get the answer for question 1
         String question1Answer = mQuestion1AnswerEditText.getText().toString();
-        // Check if it is equals to the correct answer that you store in the strings.xml
+        // Checks if it is equal to the correct answer that is stored in the strings.xml
         if (question1Answer.equals(getString(R.string.question_1_correct_answer))) {
             numberOfCorrectAnswers++;
         }
@@ -69,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         String question4Answer = mQuestion1AnswerEditText.getText().toString();
-        // Check if it is equals to the correct answer that you store in the strings.xml
+        // Checks if it is equal to the correct answer that is stored in the strings.xml
         if (question1Answer.equals(getString(R.string.question4_correct_answer))) {
             numberOfCorrectAnswers++;
         }
