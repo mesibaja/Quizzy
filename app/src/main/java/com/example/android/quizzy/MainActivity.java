@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.android.quizzy.R;
+
 public class MainActivity extends AppCompatActivity {
 
     // Free text answer for Question 1
@@ -72,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (numberOfCorrectAnswers < 2) {
-            Toast.makeText(this, "Not bad but you need more practice in order to stay healthy.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Points reached: less than 2. Not bad but you need more practice in order to stay healthy.", Toast.LENGTH_LONG).show();
         } else if (numberOfCorrectAnswers < 3) {
-            Toast.makeText(this, "Well done! You made it quite good but there is always room for improvement!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Points reached: less than 3. Well done! You made it quite good but there is always room for improvement!", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "Excellent! You have a big chance to stay healthy!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Points reached: more than 3. Excellent! You have a big chance to stay healthy!", Toast.LENGTH_LONG).show();
         }
     }
 }
